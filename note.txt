@@ -1,0 +1,35 @@
+##Manipuler l'history
+
+Pour le moment nous avons étudié les méthodes permettant de naviguer en utilisant l'historique de navigation du navigateur.
+
+Mais il est également possible de modifier cette historique en utilisant certaines méthodes. 
+history.pushState() permet d'ajouter une entrée dans l'historique de navigation.
+
+history.replaceState() permet de modifier une entrée de l'historique de navigation. 
+La méthode pushState()
+
+La méthode pushState() ajoute une nouvelle entrée à l'historique de navigation.
+
+Elle prend trois arguments, dont un n'est pas pris en charge par les navigateurs (le titre, passé en second). 
+Le premier argument est l'état, c'est un objet qui est associé à la nouvelle entrée sur l'historique de navigation. Cet objet doit avoir pour taille maximale 640 ko.
+
+Le troisième argument est l'URL. Elle doit avoir la même origine que la page actuelle. Cet argument est optionnel, s'il n'est pas précisé l'URL de la page courante sera utilisée. 
+La méthode replaceState()
+
+La méthode replaceState() modifié l'entrée courante de l'historique de navigation. 
+
+#Objet.keys() => retourne dans un tableau toutes les clee de l'objet
+#Objet.values() => retourne dans un tableau toutes les valeur des  clee de l'objet
+#Objet.entries() => retourne dans un tableau toutes les clee  ainsi que leur valleur de l'objet
+
+
+NB : utiliser les fonction simple pour creer les constructeur(se sont des fonction normales dont le nom comment en Maj) , les geters et les seters des objet pour que 
+la propriter "this" point l'objet concerne 
+si on utilise les fonction flechee this vas pointer sur lobjet global window
+
+
+
+#cookie: disponible sur le navigateur(mais pas tout comme les httpOnly qui sont ceux cree  du cotee serveur ) du client et aussi du cote serveur
+#asychronestorage ou sessionStorage sont juste disponible  sur le navigateur du client et ne peut etre recupereer cotee serveur 
+#la duree de vie d'un element garder en local storage est indefinie 
+#la duree de vie d'un element garder en session storage n'est que la duree de la session(disparait apres fermeture du navigateur)
